@@ -1,0 +1,29 @@
+{
+  "name": "esm-examples",
+  "version": "0.0.0",
+  "description": "Examples of using the Node.js ECMAScript modules API",
+  "author": "Jason James Pollman <jason.pollman@passportinc.com>",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "basic": "node --experimental-modules ./examples/basic/index.mjs",
+    "circular": "node --experimental-modules ./examples/circular/index.mjs",
+    "dynamic": "node --experimental-modules ./examples/dynamic/index",
+    "hoisted": "node --experimental-modules ./examples/hoisted/index",
+    "custom": "node --experimental-modules --loader ./examples/custom-loader/loader ./examples/custom-loader/index",
+    "custom-2": "node --experimental-modules --loader ./examples/custom-loader-2/loader ./examples/custom-loader-2/index",
+    "missing": "printf CJS: && time node ./examples/missing/index.js || printf ESM: && time node --experimental-modules ./examples/missing/index.mjs",
+    "serve": "npx serve -p 3000 &"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "serve": "^10.0.0"
+  },
+  "dependencies": {
+    "js-yaml": "^3.12.0",
+    "node-fetch": "^2.2.0",
+    "toml": "^2.3.3"
+  }
+}

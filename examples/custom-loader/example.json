@@ -1,0 +1,10 @@
+{
+  "foo": {
+    "name": "foo",
+    "value": 1
+  },
+  "bar": {
+    "name": "bar",
+    "value": 5
+  }
+}

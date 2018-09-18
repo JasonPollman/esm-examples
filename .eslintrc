@@ -1,0 +1,11 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "rules": {
+    "function-paren-newline": 0,
+    "import/extensions": 0
+  }
+}
